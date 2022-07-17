@@ -1,0 +1,248 @@
+@media only screen and (max-width: 600px){
+
+  /*.about{
+  	display: none;
+  }
+*/
+	/*nav section*/
+	 .ham{
+	 	min-width: 4rem;
+	 	min-height: 1rem;
+	 	border: 2px solid orange;
+	 	position: fixed;
+	 	left: 1%;
+	 	top: 12%;
+	 	padding: 0.5rem;
+      display: block;
+      z-index: 100000;
+	 }
+
+	 .ham .l1{
+     
+	 }
+
+	 .ham .line{
+	 	width: 2.5rem;
+	 	border: 2px solid orange;
+	 	margin: 0.4rem;
+	 }
+
+	 .backblacknav{
+	 	width: 100%;
+	 	height: 100rem;
+	 	position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: black;
+        display: flex;
+        opacity: 0.9;
+        transition: 0.4s ease;
+        transform: translateX(100%);
+	 }
+
+	 .backblacknavshow{
+	 	 transform: translateX(0);
+	 }
+
+
+#nav{
+	/*position: absolute;*/
+	background-color: black;
+}
+
+
+
+.navtop{
+	display: none;
+}
+
+.navbot{
+	justify-content: center;
+}
+
+
+.navbot .navlist{
+	position: fixed;
+	top: 10%;
+}
+
+.navlist .navul{
+ flex-direction: column;
+ margin-top: 5rem;
+ align-items: center;
+ margin-right: 2rem;
+}
+
+.navlist{
+	transition: 0.5s ease;
+	 transform: translateX(-100rem);
+}
+
+.navopen{
+	transform: translateX(0);
+}
+
+.navlist .navitem{
+	margin-top: 7rem;
+}
+.navlist .navlink{
+	font-size: 2.5rem;
+}
+
+
+
+
+	/*end nav section*/
+
+	/*slidertop*/
+	.sliderbtn{
+		width: 60%;
+		margin-left: 6%;
+	}
+	/*end slidertop*/
+
+
+/*common section*/
+ .about,.services,.contact{
+ 	flex-direction: column;
+ }
+
+
+.abouthead h1,.serviceleft h1,.contacthead h1{
+		font-size: 3.5rem;
+		letter-spacing: 10px;
+		   writing-mode: horizontal-tb;
+    -webkit-transform:rotate(0deg);
+    -moz-transform:rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform:rotate(0deg);
+    border-bottom: none;
+    border-right: 2px solid orange;
+	}
+
+	.abouthead,.serviceshead,.contacthead{
+		display: flex;
+		justify-content: center;
+	}
+
+	 .serviceleft,.contacthead,.contactcont{
+ 	width: 100%;
+ 	flex-direction: column;
+ 	padding-left: 1rem;
+ 	margin-top: 2rem;
+ }
+
+
+/*end common section*/
+
+
+/*main section*/
+.maintop{
+	min-height: 60rem;
+}
+
+.slidertop{
+	top: 25%;
+}
+
+.sliderhead{
+	/*width: 80%;*/
+	font-size: 6rem;
+}
+/*end main section*/
+
+/*about section*/
+	
+	.aboutimage{
+		display: none;
+	}
+
+	.aboutmobimg{
+		width: 30rem;
+		height: 30rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-size: 100% 100%;
+		padding-left: 1rem;
+		margin-left: 1rem;
+		border-radius: 10px;
+		background-image: url('images/About/screenshot.png');
+	}
+
+	
+
+	.aboutcont{
+		flex-direction: column;
+		padding-left: 2rem;
+	}
+
+	.aboutpara{
+		width: 99%;
+		margin-top: 1rem;
+	}
+
+
+	.aboutcont,.aboutimage{
+		width: 100%;
+
+	}
+
+	/*about section*/
+ /*service section*/
+.services{
+	margin-top: 5rem;
+}
+
+ .servicespara p{
+ 	 /*margin-left: 1rem;*/
+   line-height: 2.8rem;
+    margin-top: 1rem;
+    font-size: 2.2rem;
+ }
+
+ .servicespara{
+ 	
+ 	width: 99%;
+ 	display: flex;
+ 	justify-content: center;
+ 	align-items: center;
+ 	border-bottom: 2px solid orange;
+ }
+
+ .serviceleft h1{
+ 	padding-right: 0;
+ }
+
+ .serviceright{
+ 	width: 100%;
+ 	margin-top: -42rem;
+ }
+
+
+ .navigation{
+ 	margin-left: 1rem;
+ }
+ /*end service section*/
+
+ /*contact section*/
+ .contact{
+ 	margin-top: -5rem;
+ }
+ .contactleft,.contactright{
+ 	width: 100%;
+ }
+
+ .contactright{
+ 	margin-top: -10rem;
+ }
+
+ .contacthead h1{
+ 	font-size: 3rem;
+ }
+
+ /*end contact section*/
+
+}
